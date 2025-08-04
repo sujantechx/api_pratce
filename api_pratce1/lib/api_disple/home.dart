@@ -1,5 +1,6 @@
 import 'package:api_pratce1/api_disple/comment.dart';
 import 'package:api_pratce1/api_disple/quots.dart';
+import 'package:api_pratce1/api_disple/recipy.dart';
 import 'package:api_pratce1/api_disple/todo.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -89,7 +90,7 @@ class _HomeState extends State<Home> {
                 children: [
                   InkWell(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Quots(),));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => RecipePage(),));
                     },
                     child: Container(
                       height: 200,
@@ -98,7 +99,7 @@ class _HomeState extends State<Home> {
                           borderRadius: BorderRadius.circular(21),
                           color: Colors.pink.shade300
                       ),
-                      child: Center(child: Text("Quotes",style: TextStyle(fontSize: 22,fontWeight: FontWeight.w600),)),
+                      child: Center(child: Text("Recipes",style: TextStyle(fontSize: 22,fontWeight: FontWeight.w600),)),
 
                     ),
                   ),
