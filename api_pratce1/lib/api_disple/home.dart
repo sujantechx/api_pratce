@@ -1,4 +1,5 @@
 import 'package:api_pratce1/api_disple/comment.dart';
+import 'package:api_pratce1/api_disple/post.dart';
 import 'package:api_pratce1/api_disple/quots.dart';
 import 'package:api_pratce1/api_disple/recipy.dart';
 import 'package:api_pratce1/api_disple/todo.dart';
@@ -106,7 +107,7 @@ class _HomeState extends State<Home> {
                   SizedBox(height: 20,),
                   InkWell(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Todo(),));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Post(),));
                     },
                     child: Container(
                       height: 200,
@@ -115,7 +116,7 @@ class _HomeState extends State<Home> {
                           borderRadius: BorderRadius.circular(21),
                           color: Colors.pink.shade300
                       ),
-                      child: Center(child: Text("Todo",style: TextStyle(fontSize: 22,fontWeight: FontWeight.w600),)),
+                      child: Center(child: Text("Post",style: TextStyle(fontSize: 22,fontWeight: FontWeight.w600),)),
 
                     ),
                   ),
